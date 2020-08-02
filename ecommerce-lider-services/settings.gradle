@@ -1,0 +1,8 @@
+include 'common'
+include 'ecommerce-lider-configuration'
+
+include 'adapters:ecommerce-lider-web'
+include 'adapters:ecommerce-lider-persistence'
+include 'ecommerce-lider-application'
+
+rootProject.name = 'ecommerce-lider-services'

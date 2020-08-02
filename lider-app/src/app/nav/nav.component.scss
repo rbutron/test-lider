@@ -1,0 +1,103 @@
+.navbar{
+background: #0071CE;
+    &-brand{
+        img{
+            width: 152px;
+            height: 35px;
+        }
+    }
+    .menu-icon{
+        cursor: pointer;
+    font-size: 25px;
+    margin-left: 13px;
+    margin-top: 9px;
+    margin-right: 10px;
+    }
+    .show-category{
+        display: inline-block;
+        position: absolute;
+        padding-top: 11px;
+    }
+    .nav-item{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    }
+    .categories{
+        cursor: pointer;
+        left: 250px;
+    height: 44px;
+    min-width: 140px;
+    background-color: #06568f;
+    color: #fff;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    img{
+        width: 30px;
+    }
+    }
+
+    .form-control:focus {
+        box-shadow: unset;
+        border: unset;
+      
+    }
+    .form-control{
+        border-radius: 0 27px 27px 0;
+    }
+    .pill{
+        width: 100%;
+        margin: 0 5%;
+    }
+    .search{
+        border: unset;
+        border-radius: 27px 0 0 27px;
+        background: white;
+    }
+    .car{
+        height: 43px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 104px;
+        margin-right:3% ;
+        border-radius: 5px;
+        background-color: #06568f;
+    img{
+        width: 29px;
+        height: 25px;
+    }
+    span{
+        color: #06568f;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-color: #ffc220;
+        cursor: pointer;
+        justify-content: center;
+    align-items: center;
+    display: flex;
+        margin-left: 10px;    }
+    }
+    ul{
+        width: 100%;
+    }
+    .btn-market{
+        background: #5FB446;
+        display: flex;
+        font-weight: bold;
+        font-size: 14px;
+        color: white;
+        align-items: center;
+        img{
+            width: 30px;
+        }
+    }
+    .form-btns{
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+    }
+}

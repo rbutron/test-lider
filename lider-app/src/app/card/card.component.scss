@@ -1,0 +1,27 @@
+.product{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 100%;
+    }
+    button{
+        width: 50%;
+    margin: 5% auto;
+    border-radius: 19px;
+    }
+    p{
+        &.nombre{
+            margin-top: 10px;
+            font-size: 16px;
+            span{
+                font-weight: bold;
+            }
+        }
+        &.precio{
+            font-size: 20px;
+            color: #565656;
+            font-weight: 700;
+        }
+    }
+}

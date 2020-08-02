@@ -1,0 +1,33 @@
+plugins {
+    id 'org.springframework.boot' version "${springPluginVersion}"
+}
+
+dependencies {
+
+	implementation project(':common')
+    implementation project(':ecommerce-lider-application')
+    implementation project(':adapters:ecommerce-lider-persistence')
+    implementation project(':adapters:ecommerce-lider-web')
+	
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'org.springframework.boot:spring-boot-starter-undertow'
+    
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersionStatic}"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersionStatic}"
+}
+
+apply plugin: 'application'
+apply plugin: 'org.springframework.boot'
+	
+mainClassName = "co.com.test.EcommerceLiderApplication"
+
+bootJar {
+	baseName 'ecommerce-lider-services'
+	mainClassName = "co.com.test.EcommerceLiderApplication"
+}
+
+test {
+    useJUnitPlatform()
+    systemProperty 'de.adesso.junitinsights.enabled', 'true'
+}

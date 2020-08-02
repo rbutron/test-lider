@@ -1,0 +1,8 @@
+<div class="col-md-12 product">
+    <img [src]="'http://'+obj.imageElement" alt="">
+    <p class="nombre">{{obj.brandElement}} <span>{{obj.brandElement}}</span></p>
+    <p class="precio" *ngIf="obj.discountElement">{{obj.discountElement | currency}}</p>
+    <p [class]="obj.discountElement ? 'descuento': 'precio'">{{obj.priceElement | currency}}</p>
+    
+    <button type="button" class="btn btn-outline-primary btn.guardar">Guardar</button>
+  </div>

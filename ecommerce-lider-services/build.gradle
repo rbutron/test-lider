@@ -1,0 +1,40 @@
+plugins {
+    id 'io.spring.dependency-management' version "${springDependencyManagement}"
+}
+
+subprojects {
+
+    group = 'co.com.chef'
+    version = '0.0.1-SNAPSHOT'
+
+    apply plugin: 'java'
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'java-library'
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+    }
+
+    compileTestJava {
+        options.encoding = 'UTF-8'
+    }
+    
+    dependencyManagement {
+	    imports {
+	    	mavenBom("org.springframework.boot:spring-boot-dependencies:${springPluginVersion}")
+	    }
+    }
+
+    java {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+    
+    dependencies {
+	    compileOnly 'org.projectlombok:lombok'
+	    annotationProcessor 'org.projectlombok:lombok'
+    }
+
+}

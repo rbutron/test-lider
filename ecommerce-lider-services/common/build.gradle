@@ -1,0 +1,5 @@
+dependencies {
+    compile group: 'org.springframework', name: 'spring-context-support', version: springVersionStatic
+    compile group: 'org.springframework', name: 'spring-context', version: springVersionStatic
+    compile group: 'org.springframework', name: 'spring-webflux', version: springVersionStatic
+}

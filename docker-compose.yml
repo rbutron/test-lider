@@ -1,0 +1,13 @@
+
+version: '2'
+services:
+  lider-app:
+    build: lider-app/.
+    ports:
+      - "80:80"
+    depends_on:
+      - ecommerce-lider-services
+  ecommerce-lider-services:
+    build: ecommerce-lider-services/.
+    ports:
+      - "9730:9730"

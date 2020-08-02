@@ -1,0 +1,18 @@
+<app-nav (searchEvent)="findProducts($event)"></app-nav>
+<div class="content">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <p *ngIf="search">Resultados para <span class="bold">{{search}}</span>:</p>
+    </div>
+    <div class="col-md-8">
+<div class="row">
+<app-card [dataCard]="card" *ngFor="let c of card | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize" [obj]="c"></app-card>
+</div>
+    </div>
+  </div>
+</div>
+<div class="pagination" *ngIf="card">
+  <ngb-pagination [collectionSize]="card.length" [(page)]="page" [maxSize]="5" [rotate]="true" [ellipses]="false" [boundaryLinks]="true"></ngb-pagination>
+</div>
+</div>

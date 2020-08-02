@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="#"><img src="./../../assets/lider-logo.svg" alt="lider-logo" srcset=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item categories">
+                <div class="">
+                    <img src="./../../assets/menu_icon.png" alt="icon-logo" srcset="">
+                    <span>Categorias</span>
+                </div>
+            </li>
+            <li class="nav-item pill">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary search" type="button"><svg
+                                class="ais-SearchBox-submitIcon" xmlns="http://www.w3.org/2000/svg" width="10"
+                                height="10" viewBox="0 0 40 40">
+                                <path
+                                    d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z">
+                                </path>
+                            </svg></button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="¿Qué estás buscando?" aria-label=""
+                        aria-describedby="basic-addon1" #box (keyup)="onKey(box.value)" maxlength="20">
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 form-btns">
+            <div class="car">
+                <img src="./../../assets/lider-cart.svg" alt="icon-car" srcset="">
+                <span>0</span>
+            </div>
+            <button class="btn btn-outline-success my-2 my-sm-0 btn-market" type="submit"><img
+                    src="https://www.lider.cl/catalogo/images/marketIcon.svg" alt="" srcset="">Supermercado</button>
+        </form>
+    </div>
+</nav>
