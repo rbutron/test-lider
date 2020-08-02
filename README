@@ -1,1 +1,15 @@
-Prueba Lider
+# Prueba Lider
+Para poder revisar el proyecto favor ejecutar **docker-compose up --build** o **docker-compose up**
+Con este script de docker podra ver la prueba de integracion local de como dos componente pueden verse en el localhost.
+
+Si desea revisar los servicios estos estan por el puerto 9730.
+
+Ok ahora que sabemos como funciona hablemos de un poco de como esta construido el Back, se ha implementado el concepto de Arquitectura Hexagonal con el fin de
+evitar la complejidad accidental y evidenciar el valor del negocio que es lo esencial. Se implemento un estilo de arquitectura orientada a servicio, cumpliendo
+a cabalidad con el manifiesto que sustenta que para ser Microservicio, debemos cumplir:
+
+- Los componentes son servicios.
+- Organizada en torno a las funcionalidades del negocio.
+- Productos, no proyectos.
+- Gestión de datos descentralizada.
+- Diseño evolutivo.
